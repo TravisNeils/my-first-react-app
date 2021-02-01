@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-logo {
@@ -15,13 +17,16 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 3rem;
   color: white;
+}
+
+.App-header > div{
+  
 }
 
 .App-link {
@@ -35,4 +40,50 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.messagebox {
+  background: rgb(40,103,91);
+  background: linear-gradient(127deg, rgba(40,103,91,1) 0%, rgba(121,9,104,1) 50%, rgba(0,212,255,1) 100%);
+  padding:.5rem;
+  flex-grow: 10;
+}
+
+.text-input{
+  display: flex;
+  background: rgb(40,103,91);
+  background: linear-gradient(90deg, rgba(40,103,91,1) 0%, rgba(121,9,104,1) 50%, rgba(0,212,255,1) 100%);
+  padding:.5rem;
+  border-top: 1px solid whitesmoke;
+}
+
+.text-input input {
+  flex-grow:5;
+  background-color: whitesmoke;
+  padding:.8rem;
+  border-radius: 1rem;
+}
+
+.messages li {
+  background-color: whitesmoke;
+  width:fit-content;
+  padding:.8rem;
+  margin-top: 1.5rem;
+  border-radius: 1rem;
+  list-style-type: none;
+}
+
+.icon {
+  background-image: url('./platter.png');
+  height: 3rem;
+  width: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 3rem;
+  background-position: center;
+}
+
+.subtext {
+  margin-left: 3rem;
+  color: whitesmoke;
 }
