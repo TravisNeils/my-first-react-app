@@ -87,3 +87,14 @@
   margin-left: 3rem;
   color: whitesmoke;
 }
+
+.text-input button{
+  background-image: url('./arrow.png');
+  height: 3rem;
+  width: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  border-radius: 0.5rem;
+}
