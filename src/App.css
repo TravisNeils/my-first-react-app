@@ -21,8 +21,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-size: 3rem;
+  
   color: white;
+}
+
+.title {
+  font-size: 3rem;
+  flex-grow: 10;
 }
 
 .App-header > div{
@@ -47,7 +52,12 @@
   background: linear-gradient(127deg, rgba(40,103,91,1) 0%, rgba(121,9,104,1) 50%, rgba(0,212,255,1) 100%);
   padding:.5rem;
   flex-grow: 10;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
 }
+
 
 .text-input{
   display: flex;
@@ -64,13 +74,32 @@
   border-radius: 1rem;
 }
 
-.messages li {
-  background-color: whitesmoke;
+.message {
   width:fit-content;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+}
+
+.username {
+  color: aliceblue;
+  font-size: small;
+  margin-left: 0.5rem;
+}
+
+.name-input button {
+  color: white;
+  background-color: transparent;
+}
+
+.name-input {
+  margin-right: 2rem;
+}
+
+.messageText {
+  color: black;
+  background-color: whitesmoke;
   padding:.8rem;
-  margin-top: 1.5rem;
   border-radius: 1rem;
-  list-style-type: none;
 }
 
 .icon {
